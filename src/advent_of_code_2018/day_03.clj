@@ -1,7 +1,6 @@
 (ns advent-of-code-2018.day-03
   "https://adventofcode.com/2018/day/3"
-  (:require [clojure.string :as string]
-            [clojure.set :as set]))
+  (:require [clojure.string :as string]))
 
 (defn read-input [input]
   (map (comp (partial zipmap [:claim :id :x :y :w :h])
