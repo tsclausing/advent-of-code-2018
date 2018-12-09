@@ -5,6 +5,8 @@
 (defn read-input [input]
   (string/split-lines input))
 
+;-- PUZZLE SOLUTIONS --;
+
 (defn checksum
   "Puzzle 1: Count the items that contain exactly two of any letter
    and separately count those with exactly three of any letter.

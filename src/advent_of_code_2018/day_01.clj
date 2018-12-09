@@ -5,6 +5,8 @@
 (defn read-input [input]
   (map bigint (string/split-lines input)))
 
+;-- PUZZLE SOLUTIONS --;
+
 (defn frequency
   "Puzzle 1: What is the resulting frequency after changes have
    been applied?"
@@ -17,9 +19,9 @@
   [changes]
   (reduce (fn [a v] (if-not (a v)
                       (conj a v)
-                      ; found a repeat!
+                      ; Found a repeat!
                       (reduced v)))
-          ; seen
+          ; Seen
           #{0}
-          ; infinite next value
+          ; Infinite next frequency value
           (reductions + (cycle changes))))
