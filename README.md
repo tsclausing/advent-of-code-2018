@@ -2,6 +2,10 @@
 
 Solutions by tsclausing.
 
+## Get dependencies
+
+`$ lein deps`
+
 ## Run
 
-Clone repository and run `lein test`
+Clone repository and run `$ lein test`
